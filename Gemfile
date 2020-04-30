@@ -29,7 +29,7 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'codecov'
+  gem 'codecov', '>= 0.1.13'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
