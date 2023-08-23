@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.5'
 gem 'puma', '~> 3.7'
 
 gem 'f2ynab', github: 'fintech-to-ynab/f2ynab'
@@ -23,12 +23,12 @@ end
 
 group :development, :test do
   gem 'listen'
-  gem 'dotenv-rails'
-  gem 'rubocop-rails_config'
+  gem 'dotenv-rails', '>= 2.7.6'
+  gem 'rubocop-rails_config', '>= 0.3.0'
 end
 
 group :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.8.2'
   gem 'codecov'
 end
 
